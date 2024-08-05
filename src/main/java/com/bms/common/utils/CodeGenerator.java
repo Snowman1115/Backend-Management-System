@@ -29,7 +29,7 @@ public class CodeGenerator {
                     builder.mapperBuilder().enableMapperAnnotation().build();
                     builder.controllerBuilder().enableHyphenStyle() // enable CamelCase
                             .enableRestStyle(); // Enable @RestController Interceptor
-                    builder.addInclude("bms_department") // <---- Configure Needed Table Name
+                    builder.addInclude("bms_user_role") // <---- Configure Needed Table Name
                             .addTablePrefix("t_","bms_"); // <---- Configure Filter Table Prefix
                 })
                 // .templateEngine(new FreemarkerTemplateEngine()) // Default Engine Template: Velocity

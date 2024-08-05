@@ -39,22 +39,22 @@ public class User implements Serializable {
     /**
      * Account isNotExpired (0:NO, 1:YES)
      */
-    private Integer isAccountNonExpired;
+    private boolean isAccountNonExpired;
 
     /**
      * Account isNotLock (0:NO, 1:YES)
      */
-    private Integer isAccountNonLocked;
+    private boolean isAccountNonLocked;
 
     /**
      * Password isNotExpired (0:NO, 1:YES)
      */
-    private Integer isCredentialsNonExpired;
+    private boolean isCredentialsNonExpired;
 
     /**
      * Account isEnable (0:NO, 1:YES)
      */
-    private Integer isEnabled;
+    private boolean isEnabled;
 
     /**
      * User First Name
@@ -94,7 +94,7 @@ public class User implements Serializable {
     /**
      * 0 = MALE : 1 = FEMALE
      */
-    private Integer gender;
+    private boolean gender;
 
     /**
      * User Avatar Url
@@ -114,7 +114,7 @@ public class User implements Serializable {
     /**
      * 0 = isActive : 1 isDeleted
      */
-    private Integer isDelete;
+    private boolean isDelete;
 
     /**
      * Remarks
@@ -130,6 +130,5 @@ public class User implements Serializable {
      * Update Time
      */
     private LocalDateTime updateTime;
-
 
 }
